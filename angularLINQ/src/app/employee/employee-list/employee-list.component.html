@@ -1,0 +1,27 @@
+<p>employee-list works!</p>  
+<!-- <button (click)="addNewEmp(EmpId,EmpName,is)">Get Data</button> -->
+
+
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Active</th>    
+    </tr>
+</thead>
+    <tr *ngFor="let x of employee">
+        <td scope="col">{{x.EmpId}}</td>
+        <td scope="col">{{x.EmpName}}</td>
+        <td scope="col">{{x.isActive}}</td>  
+    </tr>
+</table>
+<h3>Employee Status: {{active}}</h3>  
+<h3>Employee Average Age: {{averAge}}</h3> 
+<!-- <h3>Employee Name Concat: {{desigConcat}}</h3>  -->
+<h3>Contains fox: {{isContains}}</h3> 
+<h3>Contains fox Position: {{desigConcat}}</h3> 
+<a *ngFor="let x of newEmp">
+    <span>{{x.EmpId}}</span>
+    <span>{{x.EmpName}}</span>
+</a>
